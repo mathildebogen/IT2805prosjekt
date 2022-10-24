@@ -1,12 +1,68 @@
 body {
     background-color: #262626;
-}
-p {
-    color: white;
+    padding: 30px;
+    padding-top: 0px;
 }
 
+/*Menubar*/
+
+/*
+.menubar {
+    border: 2px solid red;
+    width: 100%;
+    height: 80px;
+}
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    border: 2px solid green;
+
+  }
+
+li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding-right: 40px;
+    height: 50px;
+}
+
+/*Diverse skriftstiler*/
 h1 {
-    color: #262626;
-    font-size: 64px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
     font-family: termina, sans-serif;
+}
+
+.logo {
+    color: #FACFE3;
+    border: 2px solid yellow;
+    height: 50px;
+    width: 50px;
+}
+
+h3 {
+    font-family: 'Inter';
+    font-weight: medium;
+    color: white;
+    font-size: 20px;
+}
+
+h3:hover {
+    color: #FFB4CF;
+}
+
+p {
+    font-family: 'Inter';
+    color: white;
+    font-size: 16px;
+}
+
+.torsdagsbar {
+    color: #FFDE77;
 }
