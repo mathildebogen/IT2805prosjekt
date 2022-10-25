@@ -7,18 +7,63 @@
     <link rel="stylesheet" href="styling.css">
     <link rel="stylesheet" href="https://use.typekit.net/fxg5rfp.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <title>Homepage</title>
+    <title>Drinks</title>
+    <style>
+        .parent {
+            position:static;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 1%;
+        }
+
+        .child {
+            text-align: center;
+        }
+
+        #drink {
+            height: 50vh;
+        }
+    </style>
 </head>
 <body>
 
-    <h2>Menu</h2>
+    <h1 class="parent">Menu</h1>
 
-    <div id="drink">
-        <img src="img/moscow.jpg">
-        <h3>MOSCOW MULE</h3>
-        <p>Vodka, ginger beer, lime</p>
+    <div class="parent">
+        <img src="img/moscow.jpg" id="drink">
+        <div class="child" id="text">
+            <h3>MOSCOW MULE</h3>
+            <p>Vodka, ginger beer, lime</p>
+        </div>
+
     </div>
     
+    <div class="parent">
+        <img src="img/negroni.png" id="drink">
+        <div class="child" id="text">
+            <h3>NEGRONI</h3>
+            <p>Gin, campari, vermouth, orange peel</p>
+        </div>
+
+    </div>
+
+    <div class="parent">
+        <img src="img/mojito.png" id="drink">
+        <div class="child" id="text">
+            <h3>MOJITO</h3>
+            <p>White rum, sugar, mint, soda, lime</p>
+        </div>
+
+    </div>
+
+    <div class="parent">
+        <img src="img/aperol.png" id="drink">
+        <div class="child" id="text">
+            <h3>APEROL SPRITZ</h3>
+            <p>Aperol, prosecco, club soda, orange</p>
+        </div>
+
+    </div>
     
 </body>
 </html>
