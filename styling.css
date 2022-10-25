@@ -5,31 +5,28 @@ body {
 }
 
 /*Menubar*/
-
-/*
-.menubar {
-    border: 2px solid red;
-    width: 100%;
-    height: 80px;
-}
-*/
-
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     float: right;
-    border: 2px solid green;
-
+    position: relative;
+    top: -65px;
   }
 
 li {
     float: left;
     display: block;
     text-align: center;
-    padding-right: 40px;
+    padding-right: 80px;
     height: 50px;
+}
+
+hr {
+    width: 100%;
+    position: relative;
+    top: -40px;
 }
 
 /*Diverse skriftstiler*/
@@ -41,7 +38,6 @@ h1 {
 
 .logo {
     color: #FACFE3;
-    border: 2px solid yellow;
     height: 50px;
     width: 50px;
 }
