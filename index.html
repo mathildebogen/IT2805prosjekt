@@ -20,7 +20,12 @@
         }
         img {
             width: 70%;
-            z-index: 1;
+        }
+        #dj {
+            display: none;
+        }
+        #tekstur {
+            display: none;
         }
         h3 {
             float: right;
@@ -37,11 +42,23 @@
             float: right;
         }
 
+        button{
+            background-color: #262626;
+            border: 1px solid #FFDE77;
+            color: #FACFE3;
+            opacity: 0.7;
+            margin-left: 230px;
+
+
+        }
+
         @media only screen and (max-width: 800px) {
             body {background-color: purple;}
             p {font-size: 16px;}
             .torsdagsbar {font-size: 30px;}
         }
+
+
     </style>
 </head>
 <body>
@@ -58,12 +75,65 @@
 
     <!--Overskrift-->
     <div class="content">
-        <img src="img/stemningsbilde.jpeg" alt="stemningsbilde">
+        <img id="stemning" src="img/stemningsbilde.jpeg" alt="stemningsbilde">
+        <img id="dj" src="img/dj.jpeg" alt="dj">
+        <img id="tekstur" src="img/tekstur.jpeg" alt="tekstur">
         
+        <br>
+        <button id="previous"><<<</button>
+        <button id="next">>>></button>
+
         <div class="text">
             <h1 class="torsdagsbar">TORSDAGSBAR</h1>
             <p>Grab a beer with us at Skiboli</p>
         </div>
     </div>
+
+
+    <script>
+        const stemning = document.getElementById("stemning");
+        const dj = document.getElementById("dj");
+        const tekstur = document.getElementById("tekstur");
+
+        const next = document.getElementById("next");
+        const previous = document.getElementById("previous");
+
+        next.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            if (stemning.style.display != "none"){
+                stemning.style.display = "none";
+                dj.style.display = "block";
+            }
+            else if (dj.style.display != "none"){
+                dj.style.display = "none";
+                tekstur.style.display = "block";
+            }
+            else {
+                tekstur.style.display = "none";
+                stemning.style.display = "block";
+            }
+
+        })
+
+        previous.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            if (stemning.style.display != "none"){
+                stemning.style.display = "none";
+                tekstur.style.display = "block";
+            }
+            else if (tekstur.style.display != "none"){
+                tekstur.style.display = "none";
+                dj.style.display = "block";
+            }
+            else {
+                dj.style.display = "none";
+                stemning.style.display = "block";
+            }
+        })
+        
+
+    </script>
 </body>
 </html>
