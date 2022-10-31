@@ -54,7 +54,7 @@ h3:hover {
     color: #FFB4CF;
 }
 
-p {
+p, td {
     font-family: 'Inter';
     color: white;
     font-size: 16px;
@@ -62,4 +62,17 @@ p {
 
 .torsdagsbar {
     color: #FFDE77;
+}
+
+button{
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FACFE3;
+    font-family: 'Inter';
+}
+
+button:hover {
+    background-color: #FFDE77;
 }
