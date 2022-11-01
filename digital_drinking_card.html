@@ -53,6 +53,13 @@
             transition-delay: 0.5s;
         }
 
+        #frameTwo, #frameThree, #frameFour, #frameFive {
+            display: none;
+        } 
+        img {
+            width: 100%;
+        }
+
     </style>
 </head>
 <body>
@@ -102,10 +109,52 @@
         const frameThree = document.getElementById("frameThree");
         const frameFour = document.getElementById("frameFour");
         const frameFive = document.getElementById("frameFive");
+        const body = document.getElementsByTagName("body");
 
         const hover = document.getElementsByClassName("animation");
 
-        const button = document.getElementsByTagName("button");
+        const frameList = [frameOne, frameTwo, frameThree, frameFour, frameFive];
+
+        
+        function nrFive() {
+            frameFive.style.display = "none";
+            frameOne.style.display = "block";
+
+        }
+        function nrFour() {
+            frameFour.style.display = "none";
+            frameFive.style.display = "block";
+            setTimeout(nrFive, 300);
+
+        }
+        function nrThree() {
+            frameThree.style.display = "none";
+            frameFour.style.display = "block";
+            setTimeout(nrFour, 300);
+        }
+        function nrTwo() {
+            frameTwo.style.display = "none";
+            frameThree.style.display = "block";
+            setTimeout(nrThree, 300);
+        }
+        function nrOne() {
+            frameOne.style.display = "none";
+            frameTwo.style.display = "block";
+            setTimeout(nrTwo, 300);
+        }
+
+        function fillFunc () {
+            setTimeout(nrOne, 300);
+        }
+
+        frameOne.addEventListener("mouseover", event => {
+            event.preventDefault();
+            frameOne.style.display = "block";
+            fillFunc();
+        });
+
+        
+        
 
     </script>
 
