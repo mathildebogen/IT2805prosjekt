@@ -19,7 +19,6 @@
         text-align: center;
        }
        
-       
        .events {
             width: 60%;
             position:relative;
@@ -33,7 +32,6 @@
         p {
             max-width: 45ch;
         }
-
 
         #footer {
             margin-top: 200px; 
@@ -69,6 +67,7 @@
         <p> It is time to meet again! 
             Note the date and take a beer with some old and new friends.
             See you there!</p>
+            <div id="daysLeft"></div>
     </div>
 
     <div class="events">
@@ -96,8 +95,18 @@
 
     <script>
 
+        var oneDay = 1000*60*60*24
+        var actualDate = new Date();
+        var firstEvent = new Date("01/05/2023");
+        var secondEvent = new Date(01/19/2023);
 
+        var result = Math.round(firstEvent.getTime() - actualDate.getTime()) / (oneDay);
+        var finalResult = result.toFixed(0);
 
+        // var days = document.getElementById('daysLeft')
+        // days.write("Days left: <br>" + finalResult + "!");
+
+        document.write("Days left: " + finalResult + "!");
 
     </script>
 
