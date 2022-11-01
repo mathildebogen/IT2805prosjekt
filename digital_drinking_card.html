@@ -33,6 +33,28 @@
         .bold {
             font-weight: lighter;
         }
+
+        .animation {
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 2px;
+        display: inline-block;
+        width: 200px;
+        }
+
+        .transformed-state {
+            transition-delay: 0.5s;
+            transition-property: "animation";
+        }
+
+        #frameOne{
+            transition-delay: 0.5s;
+        }
+
+        #frameTwo{
+            transition-delay: 0.5s;
+        }
+
     </style>
 </head>
 <body>
@@ -66,6 +88,32 @@
             <td><button>BUY</button></td>
         </tr>
     </table>
+
+    <div class="animation">
+        <img id="frameOne" src="img/1.png" alt="Animation of a drink loading, glass empty.">
+        <img id="frameTwo" src="img/2.png" alt="Animation of a drink loading, glass pouring.">
+        <img id="frameThree" src="img/3.png" alt="Animation of a drink loading, glass pouring.">
+        <img id="frameFour" src="img/4.png" alt="Animation of a drink loading, glass full.">
+        <img id="frameFive" src="img/5.png" alt="Animation of a drink loading, glass full with cherry on top.">
+
+    </div>
+
+    <script>
+        const frameOne = document.getElementById("frameOne");
+        const frameTwo = document.getElementById("frameTwo");
+        const frameThree = document.getElementById("frameThree");
+        const frameFour = document.getElementById("frameFour");
+        const frameFive = document.getElementById("frameFive");
+
+        const hover = document.getElementsByClassName("animation");
+
+        hover.addEventListener("hover", (event) => {
+            event.preventDefault();
+
+            
+        })
+
+    </script>
     
     <script>
         const button = document.getElementsByTagName("button");
