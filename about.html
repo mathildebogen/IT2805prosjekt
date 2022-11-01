@@ -12,6 +12,36 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
     <title>Homepage</title>
+    <style>
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5%;
+        }
+
+        img{
+            width: 160%;
+            margin: 10px;
+            
+        }
+        .image{
+            padding-top: 10px;
+            flex-basis: 70%
+        }
+        .text{
+            font-size: 20px;
+            padding-left: 20%;
+            margin-left: 10px;
+            width: auto;
+            max-width: 900px;
+        }
+      
+        
+        
+    </style>
+    
 </head>
 <body>
     <!--Menubar-->
@@ -25,13 +55,30 @@
     </ul>
     <hr>
 
-    <h1>About us</h1>
+    
+    <div class = "container">
+    <div class="image">
+        <img id= "about_us" src="img/about_us.jpeg" alt = "gjengen" width=50%> 
 
-    <p class="text"> Hi! We are a student bar driven by students from Industrial design and architecture. Come by yourself or with a friend and enjoy a cold beer with us. There will be good music an good vibes! Everyone is invited! 
-    </p>
+    </div>
 
     
-    
+
+    <div class="text">
+        <h1>About us</h1>
+        
+        <p>
+            We are a student bar driven by students from Industrial design and architecture. Come by yourself or with a friend and enjoy a cold beer and one of our tasy drinks with us. There will be good music an good vibes!  
+        </p>
+       
+        <p>Everyone is invited!</p>
+    </div>
+
+  
+
+</div>
+
+
     
 </body>
 </html>
