@@ -13,14 +13,52 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <title>Homepage</title>
     <style>
-        .text{
-            position: relative;
-            float: right;
-            width: 40%;
-            border: 2px solid red;
-            margin: 5%;
-            top: 200%;
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10%;
         }
+
+        img{
+            width: 130%;
+            margin: 40px;
+            
+        }
+        .image{
+            flex-basis: 70%
+        }
+        .text{
+            font-size: 20px;
+            padding-left: 20%;
+            margin-left: 10px;
+            width: auto;
+            max-width: 900px;
+        }
+        
+        .button{
+            margin-left: 60%;
+            margin-top: 5%;
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            border-radius: 1px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: 0.4s;
+            
+        }
+
+        .button:hover {
+            background-color: #1d361e; /* Green */
+            color: white;
+        }
+
+        
     </style>
     
 </head>
@@ -44,15 +82,20 @@
     </div>
 
     <div class="text">
+        <h1>Join us!</h1>
         <p>Do you find Torsdagsbar interesting and think 
             it would have been exciting to run it with us? 
             We meet once a week in addition to work at the events. 
             We are a social and creative group who love to create a good atmosphere.
             Click the button below and insert your contact information.
             We look forward to hearing from you!</p>
+        
+        <button type="button" class="button">Apply here</button>
     </div>
-    
-    
+
+</div>
+
+
     
 </body>
 </html>
