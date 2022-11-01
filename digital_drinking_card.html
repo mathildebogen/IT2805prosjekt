@@ -38,6 +38,7 @@
         margin-left: 10px;
         margin-top: 2px;
         width: 150px;
+        transition-delay: 0.5s;
         }
 
         .transformed-state {
@@ -45,13 +46,6 @@
             transition-property: "animation";
         }
 
-        #frameOne{
-            transition-delay: 0.5s;
-        }
-
-        #frameTwo{
-            transition-delay: 0.5s;
-        }
 
     </style>
 </head>
@@ -96,6 +90,7 @@
 
     </div>
 
+
     <script>
         const frameOne = document.getElementById("frameOne");
         const frameTwo = document.getElementById("frameTwo");
@@ -103,7 +98,14 @@
         const frameFour = document.getElementById("frameFour");
         const frameFive = document.getElementById("frameFive");
 
-        const hover = document.getElementsByClassName("animation");
+        var imageList =["frameOne", "frameTwo", "frameThree", "frameFour", "frameFive"];
+
+        imageList.addEventListener("hover", (event) => {
+            event.preventDefault();
+
+            // for løkke her som appender gjennom imageList
+
+        })
 
         const button = document.getElementsByTagName("button");
 
