@@ -38,6 +38,7 @@
         margin-left: 10px;
         margin-top: 2px;
         width: 150px;
+        transition-delay: 0.5s;
         }
 
         .transformed-state {
@@ -45,13 +46,6 @@
             transition-property: "animation";
         }
 
-        #frameOne{
-            transition-delay: 0.5s;
-        }
-
-        #frameTwo{
-            transition-delay: 0.5s;
-        }
 
         #frameTwo, #frameThree, #frameFour, #frameFive {
             display: none;
@@ -103,6 +97,21 @@
 
     </div>
 
+     <!--Footer-->
+    <div id="footer">
+        <hr id="footerline">
+        <div id="contactInfo">
+            <p class="footerText">CONTACT US</p>
+            <p class="footerText">Skiboli,</p>
+            <p class="footerText">Sem Sælandsvei 3, 7034 Trondheim</p>
+            <br>
+            <p class="footerText">FOLLOW</p>
+            <p class="footerText">(Link instagram?)</p>
+            <p class="footerText">(Link Facebook?)</p>
+        </div>
+    </div>
+
+
     <script>
         const frameOne = document.getElementById("frameOne");
         const frameTwo = document.getElementById("frameTwo");
@@ -111,7 +120,14 @@
         const frameFive = document.getElementById("frameFive");
         const body = document.getElementsByTagName("body");
 
-        const hover = document.getElementsByClassName("animation");
+        var imageList =["frameOne", "frameTwo", "frameThree", "frameFour", "frameFive"];
+
+        imageList.addEventListener("hover", (event) => {
+            event.preventDefault();
+
+            // for løkke her som appender gjennom imageList
+
+        })
 
         const frameList = [frameOne, frameTwo, frameThree, frameFour, frameFive];
 

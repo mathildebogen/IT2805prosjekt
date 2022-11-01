@@ -33,15 +33,6 @@
             max-width: 45ch;
         }
 
-        #footer {
-            margin-top: 200px; 
-        }
-        .footerText {
-            color: rgb(163, 163, 163);
-            font-size: 14px;
-
-        }
-
         #daysLeft1, #daysLeft2 {
             color: #FFDE77;
             font-weight: bold;
@@ -79,13 +70,12 @@
     <div class="events">
         <img src=img/event2.jpeg alt="halloween" width=100%>
         <h2>THURSDAY 19th OF JANUARY</h2>
-        <p>Theme: WINTER PARTY!
-            Dress up in your scariest outfit 
-            and come have fun with us!</p>
+        <p>Theme: WINTER PARTY!</p>
+        <p>Come have fun with us!</p>
         <div id="daysLeft2"></div>
     </div>
 
-
+    <!--Footer-->
     <div id="footer">
         <hr id="footerline">
         <div id="contactInfo">
@@ -101,7 +91,6 @@
 
 
     <script>
-
         var oneDay = 1000*60*60*24
         var actualDate = new Date();
         var firstEvent = new Date("01/05/2023");
@@ -114,7 +103,6 @@
 
        document.getElementById('daysLeft1').innerText = ("DAYS LEFT: " + finalResult1 + "!");
        document.getElementById('daysLeft2').innerText = ("DAYS LEFT: " + finalResult2 + "!");
-
     </script>
 
     

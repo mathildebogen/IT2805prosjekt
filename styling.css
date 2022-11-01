@@ -83,3 +83,15 @@ button{
 button:hover {
     background-color: #FFDE77;
 }
+
+
+/* footer */
+
+#footer {
+    margin-top: 200px; 
+}
+.footerText {
+    color: rgb(163, 163, 163);
+    font-size: 14px;
+
+}
