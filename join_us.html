@@ -13,14 +13,91 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <title>Homepage</title>
     <style>
-        .text{
-            position: relative;
-            float: right;
-            width: 40%;
-            border: 2px solid red;
-            margin: 5%;
-            top: 200%;
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2%;
         }
+
+        img{
+            width: 130%;
+            margin: 40px;
+            
+        }
+        .image{
+            flex-basis: 70%
+        }
+        .text{
+            font-size: 20px;
+            padding-left: 20%;
+            margin-left: 10px;
+            width: auto;
+            max-width: 900px;
+        }
+        
+        #button{
+            margin-left: 60%;
+            margin-top: 5%;
+            background-color: #b7aad5; 
+            border: none;
+            color: #232323;
+            padding: 15px 32px;
+            border-radius: 1px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: 0.4s;
+            width: fit-content;
+            cursor: pointer;
+            
+        }
+
+        #button:hover {
+            background-color: #9e81a6; 
+            color: white;
+        }
+
+        #form{
+            color: white;
+            font-family: "Inter";
+            font-size: 15px;
+            visibility: hidden;
+            margin-left: 40px;
+        }
+
+        input[type=text]{
+            width: 150px;
+            height: 20px;
+            border: 1px solid #ffde77;
+            background-color: #262626;
+            color: white;
+            font-size: 15px;
+        }
+
+        
+
+        input[type=submit]{
+            background-color:  #b7aad5;
+            border: none;
+            cursor: pointer;
+            border-radius: 1px;
+            width: 80px;
+            margin-top: 10px;
+            font-family: "Inter";
+            font-size: 15px;
+            color: #232323;
+        }
+
+        #submit:hover{
+            background-color: #9e81a6; 
+            color: white;
+        }
+
+
+        
     </style>
     
 </head>
@@ -37,22 +114,50 @@
     <hr>
 
     
-    <h1>Join us!</h1>
-    <div>
-        <p><img id= "join_us" src="img/joinus_img.jpg" alt = "gjengen" width=50% </p>
+    <div class = "container">
+    <div class="image">
+        <img id= "join_us" src="img/joinus_img.jpg" alt = "gjengen" width=50%> 
 
     </div>
 
     <div class="text">
+        <h1>Join us!</h1>
         <p>Do you find Torsdagsbar interesting and think 
             it would have been exciting to run it with us? 
             We meet once a week in addition to work at the events. 
             We are a social and creative group who love to create a good atmosphere.
             Click the button below and insert your contact information.
             We look forward to hearing from you!</p>
+        
+            <button  type="button" id="button" >APPLY HERE</button>
+
+        <form id="form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">E-mail:</label><br>
+            <input type="text" id="email" name="email" required><br>
+            <input type="submit" id="submit" name="sumbit" value="Apply">
+        
+        </form>
+
+        
     </div>
-    
-    
+
+</div>
+
+
+
+<script>
+const btn = document.getElementById("button");
+btn.addEventListener("click", ()=> {
+        btn.style.display = "none";
+
+        const form = document.getElementById("form");
+        form.style.visibility = "visible";
+    });
+
+
+</script>
     
 </body>
 </html>
