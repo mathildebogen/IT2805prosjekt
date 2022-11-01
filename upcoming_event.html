@@ -42,6 +42,12 @@
 
         }
 
+        #daysLeft1, #daysLeft2 {
+            color: #FFDE77;
+            font-weight: bold;
+
+        }
+
     </style>
 
 </head>
@@ -63,19 +69,19 @@
 
     <div class='events'>
         <img src=img/upcomingevent.jpeg alt="people" width=100%>
-        <h2>THURSDAY 13TH OF OCTOBER</h2>
+        <h2>THURSDAY 5TH OF JANUARY</h2>
         <p> It is time to meet again! 
             Note the date and take a beer with some old and new friends.
             See you there!</p>
-            <div id="daysLeft"></div>
+        <div id="daysLeft1"></div>
     </div>
 
     <div class="events">
         <img src=img/event2.jpeg alt="halloween" width=100%>
-        <h2>THURSDAY 3RD OF NOVEMBER</h2>
-        <p>Theme: HALLOWEEN!
-            Dress up in your scariest outfit 
-            and come have fun with us!</p>
+        <h2>THURSDAY 19th OF JANUARY</h2>
+        <p>Theme: WINTER PARTY!</p>
+        <p>Come have fun with us!</p>
+        <div id="daysLeft2"></div>
     </div>
 
 
@@ -98,15 +104,15 @@
         var oneDay = 1000*60*60*24
         var actualDate = new Date();
         var firstEvent = new Date("01/05/2023");
-        var secondEvent = new Date(01/19/2023);
+        var secondEvent = new Date("01/19/2023");
 
-        var result = Math.round(firstEvent.getTime() - actualDate.getTime()) / (oneDay);
-        var finalResult = result.toFixed(0);
+        var result1 = Math.round(firstEvent.getTime() - actualDate.getTime()) / (oneDay);
+        var result2 = Math.round(secondEvent.getTime() - actualDate.getTime()) / (oneDay);
+        var finalResult1 = result1.toFixed(0);
+        var finalResult2 = result2.toFixed(0);
 
-        // var days = document.getElementById('daysLeft')
-        // days.write("Days left: <br>" + finalResult + "!");
-
-        document.write("Days left: " + finalResult + "!");
+       document.getElementById('daysLeft1').innerText = ("DAYS LEFT: " + finalResult1 + "!");
+       document.getElementById('daysLeft2').innerText = ("DAYS LEFT: " + finalResult2 + "!");
 
     </script>
 
