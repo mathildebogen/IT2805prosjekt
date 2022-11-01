@@ -37,10 +37,10 @@
             max-width: 900px;
         }
         
-        .button{
+        #button{
             margin-left: 60%;
             margin-top: 5%;
-            background-color: #b7aad5; /* Green */
+            background-color: #b7aad5; 
             border: none;
             color: #232323;
             padding: 15px 32px;
@@ -51,13 +51,51 @@
             font-size: 16px;
             transition-duration: 0.4s;
             width: fit-content;
+            cursor: pointer;
             
         }
 
-        .button:hover {
-            background-color: #9e81a6; /* Green */
+        #button:hover {
+            background-color: #9e81a6; 
             color: white;
         }
+
+        #form{
+            color: white;
+            font-family: "Inter";
+            font-size: 15px;
+            visibility: hidden;
+            margin-left: 40px;
+        }
+
+        input[type=text]{
+            width: 150px;
+            height: 20px;
+            border: 1px solid #ffde77;
+            background-color: #262626;
+            color: white;
+            font-size: 15px;
+        }
+
+        
+
+        input[type=submit]{
+            background-color:  #b7aad5;
+            border: none;
+            cursor: pointer;
+            border-radius: 1px;
+            width: 80px;
+            margin-top: 10px;
+            font-family: "Inter";
+            font-size: 15px;
+            color: #232323;
+        }
+
+        #submit:hover{
+            background-color: #9e81a6; 
+            color: white;
+        }
+
 
         
     </style>
@@ -91,12 +129,35 @@
             Click the button below and insert your contact information.
             We look forward to hearing from you!</p>
         
-        <button type="button" class="button">Apply here</button>
+            <button  type="button" id="button" >APPLY HERE</button>
+
+        <form id="form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">E-mail:</label><br>
+            <input type="text" id="email" name="email" required><br>
+            <input type="submit" id="submit" name="sumbit" value="Apply">
+        
+        </form>
+
+        
     </div>
 
 </div>
 
 
+
+<script>
+const btn = document.getElementById("button");
+btn.addEventListener("click", ()=> {
+        btn.style.display = "none";
+
+        const form = document.getElementById("form");
+        form.style.visibility = "visible";
+    });
+
+
+</script>
     
 </body>
 </html>
