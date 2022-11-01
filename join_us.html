@@ -23,18 +23,24 @@
 
         img{
             width: 130%;
-            margin: 40px;
+            margin-left: 12%;
+            padding: 10px;
+            min-width: 200px;
+            max-width: 700px;
             
         }
         .image{
             flex-basis: 70%
         }
+
+       
         .text{
-            font-size: 20px;
-            padding-left: 20%;
-            margin-left: 10px;
+            font-size: 10%;
+            padding-right: 10%;
+            margin-left: -10px;
             width: auto;
-            max-width: 900px;
+            margin-top: 40px;
+            max-width: 500px;
         }
         
         #button{
@@ -68,8 +74,8 @@
             margin-left: 40px;
         }
 
-        input[type=text]{
-            width: 150px;
+        input[type=text],input[type=email]{
+            width: 250px;
             height: 20px;
             border: 1px solid #ffde77;
             background-color: #262626;
@@ -135,7 +141,7 @@
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br>
             <label for="email">E-mail:</label><br>
-            <input type="text" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" required><br>
             <input type="submit" id="submit" name="sumbit" value="Apply">
         
         </form>
