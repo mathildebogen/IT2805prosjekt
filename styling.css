@@ -104,3 +104,9 @@ button:hover {
     font-size: 14px;
 
 }
+
+.footerTitle {
+    color: rgb(180, 180, 180);
+    font-size: 16px;
+    font-weight: bold;
+}

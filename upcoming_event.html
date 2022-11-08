@@ -39,6 +39,32 @@
 
         }
 
+        .footer {
+            width: 100%;
+            height: 40%;
+        }
+
+        .bothBlocks {
+            display: flex;
+            width: 100%;
+            margin-left: 2%;
+        }
+
+        .contactInfo {
+            margin-right: 5vw;
+        }
+
+        .imagesContainer {
+            display: flex;
+            width: 50%;
+        }
+
+        #socialImg {
+            width: 7vw;
+            height: 7vw;
+        }
+
+
     </style>
 
 </head>
@@ -76,17 +102,29 @@
     </div>
 
     <!--Footer-->
-    <div id="footer">
+    <div class="footer" style="width:100%;">
         <hr id="footerline">
-        <div id="contactInfo">
-            <p class="footerText">CONTACT US</p>
-            <p class="footerText">Skiboli,</p>
-            <p class="footerText">Sem Sælandsvei 3, 7034 Trondheim</p>
-            <br>
-            <p class="footerText">FOLLOW</p>
-            <p class="footerText">(Link instagram?)</p>
-            <p class="footerText">(Link Facebook?)</p>
+        <div class="bothBlocks">
+            <div class="contactInfo">
+                <h2 id="footerTitle">Get in touch</h2>
+                <p id="footerText">Skiboli</p>
+                <p id="footerText">Sem Sælandsvei 3, 7034 Trondheim</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1785.413102526227!2d10.403292016167246!3d63.41709198380805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d31bfd7850595%3A0x74f38a076cadbb4c!2sSkiboli%2C%207034%20Trondheim!5e0!3m2!1sen!2sno!4v1667899808332!5m2!1sen!2sno" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="socialLinks">
+                <h2 class="footerTitle">Follow us in social media</h2>
+                <div class="imagesContainer">
+                    <a href="https://www.facebook.com/profile.php?id=100075798674262">
+                        <img src="img/facebook.png" alt="facebook icon" id="socialImg">
+                    </a>
+                    <a href="https://www.instagram.com/leonardo.linjeforening/">
+                        <img src="img/instagram.png" alt="instagram icon" id="socialImg">
+                    </a>
+                </div>
+            </div>
+
         </div>
+
     </div>
 
 
