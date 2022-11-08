@@ -29,6 +29,15 @@ hr {
     top: -40px;
 }
 
+@media only screen and (max-width: 1050px) {
+    li.h3 {font-size: 18px;}
+    li {padding-right: 40px;}
+}
+
+@media only screen and (max-width: 850px) {
+    body {width: 800px;}
+}
+
 /*Diverse skriftstiler*/
 h1 {
     color: white;
