@@ -22,20 +22,31 @@
         }
 
         img{
-            width: 140%;
+            width: 150%;
             margin: 10px;
             
         }
-        .image{
-            padding-top: 10px;
-            flex-basis: 70%
-        }
+        
+        
         .text{
             font-size: 20px;
             padding-left: 20%;
             margin-left: 10px;
             width: auto;
             max-width: 900px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            body {background-color: purple;}
+            .container{ 
+                align-items: none !important;
+                display: block;
+            }
+            .image{ 
+                width: 250px !important;
+                margin-left: auto;
+                margin-right: auto;
+             }
         }
       
         
@@ -57,6 +68,7 @@
 
     
     <div class = "container">
+
     <div class="image">
         <img id= "about_us" src="img/about_us.jpeg" alt = "gjengen" width=50%> 
 
