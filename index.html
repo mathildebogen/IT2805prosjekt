@@ -17,9 +17,11 @@
             width: 80%;
             margin: auto;
             padding-top: 50px;
+            position: relative;
         }
         img {
             width: 70%;
+            z-index: -1;
         }
         #dj {
             display: none;
@@ -33,8 +35,7 @@
         .text {
             float: right;
             position: relative;
-            z-index: 2;
-            top: -450px;
+            top: -25em;
             line-height: 10px;
         }
        
@@ -42,22 +43,28 @@
             float: right;
         }
 
+
         button{
-            background-color: #262626;
-            border: 1px solid #FFDE77;
-            color: #FACFE3;
-            opacity: 0.7;
-            margin-left: 230px;
-
-
+            margin: auto;
+            background-color: #b7aad5; 
+            border: none;
+            color: #232323;
+            padding: 15px 32px;
+            border-radius: 1px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: 0.4s;
+            width: fit-content;
+            cursor: pointer;
+            
         }
 
-        @media only screen and (max-width: 800px) {
-            body {background-color: purple;}
-            p {font-size: 16px;}
-            .torsdagsbar {font-size: 30px;}
+        button:hover {
+            background-color: #9e81a6; 
+            color: white;
         }
-
 
     </style>
 </head>
