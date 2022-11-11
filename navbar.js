@@ -11,6 +11,7 @@ logo.append(logoText);
 navbar.append(logo);
 
 const list = document.createElement("ul");
+list.className = "menuList";
 
 const sites = ["upcoming_event.html", "about.html", "drinks.html", "digital_drinking_card.html", "join_us.html"];
 const siteNames = ["Upcoming events", "About us", "Drinks", "Drinking card", "Join us"];
