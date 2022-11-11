@@ -5,7 +5,7 @@ body {
 }
 
 /*Menubar*/
-ul {
+.menuList {
     list-style-type: none;
     margin: 0;
     padding: 0;
