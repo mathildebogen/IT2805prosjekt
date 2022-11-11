@@ -15,7 +15,7 @@ body {
     top: -65px;
   }
 
-li {
+.menuListItem {
     float: left;
     display: block;
     text-align: center;
