@@ -18,6 +18,7 @@ const siteNames = ["Upcoming events", "About us", "Drinks", "Drinking card", "Jo
 
 for (let i = 0; i<sites.length; i++) {
     const listitem = document.createElement("li");
+    listitem.className = "menuListItem";
     const link = document.createElement("a");
 
     link.href = sites[i];
