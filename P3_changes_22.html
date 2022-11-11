@@ -10,6 +10,10 @@
         #intro {
             max-width: 50%;
         }
+
+        ul {
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -18,75 +22,165 @@
     <p>Link to our website: <a href="mathilwb.folk.ntnu.no" target="_blank">Torsdagsbar</a> </p>
    
     <h2>Our changes</h2>
+    <p id="intro">While working with the code we have had to make some changes of are design. There are different reasons for the changes
+        and the changes are both covering style and structure. Here you can see a list of our changes. 
+    </p>
+
+    <h2>How we fulfilled our minimum requirements</h2>
     <ul>
-        <p id="intro">While working with the code we have had to make some changes of are design. There are different reasons for the changes
-            and the changes are both covering style and structure. Here you can see a list of our changes. 
-        </p>
-            
+        <li>
+            <p>"You can always come back to the front page."</p>
+            <p>We have made the logo clickable to bring you back to the frontpage at any time. This is a pattern familiar to users, and therefore follow the universal design guidelines.            </p>
+        </li>
+    
+        <li>
+            <p>"Include a nav-bar"</p>
+            <p>Mathilde made sure of this! It is responsive to the device size.</p>
+        </li>
+    
+        <li>
+            <p>"You can find information about how to pay for drinks at the events"</p>
+            <p>This has been included by Ane in the digital drinking-cards page.</p>
+        </li>
+    
+        <li>
+            <p>"You can always come back to the frontpage in one click."</p>
+            <p>Again - Mathilde nailed it! The navbar sticks to the top of all pages.</p>
+        </li>
+    
+        <li>
+            <p>"Every main page should be easily accessed through the nav-bar."</p>
+            <p>Mathilde again. Our hero.</p>
+        </li>
+    
+        <li>
+            <p>"We simulate that the user buys “drinking cards” to use as payment for drinks at the events."</p>
+            <p>Ane has mimicked this easy transaction on the digital drinking cards-page. We didn't use the vipps API as this is beyond the skills we learn in this course. Know your limits.</p>
+        </li>
+    </ul>
+
+    <h2>Who worked on what?</h2>
+    <p>Mathilde worked on the homepage, CSS and navbar. Ane worked on the about us page, as well as the digital drinking cards. Solveig worked on the drinkspage, as well as the hover-animation artwork of the drinking glass. Anna made the join us page with the integrated form, and also worked on making the front page responsive. Julie worked on the upcoming events page, and made the footer. Everyone added individual parts to the CSS after the design system was implemented - firstly as a style in each individual page, and at last we combined it all to the same CSS-page. For the Javascript document, we put the header and footer in the main script, and made individual scripts on each page.</p>
+
+    <h2>Modularity requirements</h2>
+    <p>The modularity requirement was handled in that every person made sure their page was responsive. Especially the pages with a photograph with a text container to it’s right, had a bigger job to do here in structuring it for smaller devices. The footer and header was made responsive in Javascript, and was of course used on all the pages as well. </p>
+    <h2>Specific changes to the pages:</h2>
+    <ul>
         <li> 
             <h2>Changes to about.html</h2>
-            <p>...</p>
+            <p>We did not make too many changes from the original plan on this page. We didn't include a picture of the people running Torsdags Bar because we couldn't find one. Instead we put a picture from the muppet show because it matched our graphic profile and made the page a bit more humorous. </p>
+            <p>We did not include an extra link to the “join us” site because the navbar already makes it easy to find at any time, so an extra link seemed unnecessary. </p>
         </li>
 
         <li>
             <h2>Changes to digital_drinking_cards.html</h2>
-            <p>...</p>
+            <p>We did not include the vipps API as this is outside the scope of this class, and instead simulated a purchase in an easy way.</p>
+            <p>We also moved the placement of the loading drinks glass hover-animation to the top, next to the title.</p>
         </li>
         
         <li>         
             <h2>Changes to drinks.html</h2>
-            <p>...</p>
+            <p>We made the drinktitles clickable to the recipe page from where we found them, as the hover-effect color made them look clickable. This was a great opportunity to link up the recipes!</p>
+            <p>Made small changes to the font-sizes in order to make the hierarchy of text understandable and information more accessible. </p>
+            <p>We also swapped one of the original drinks with another one in the same style as the others, to make the photos carry the same look. </p>
         </li>
 
         <li> 
             <h2>Changes to index.html</h2>
-            <p>...</p>
+            <p>We added arrows to navigate the image carousel for a more interactive experience for the user. </p>
         </li>
 
         <li> 
             <h2>Changes to join_us.html</h2>
-            <p>...</p>
+            <p>We did not make any drastic changes from the original plan on this page. We chose a joyful picture, wrote a little text about Torsdagsbar and made a form where you get in contact with Torsdagsbar.</p>
+            <p>We make some small changes compared to the Figma wireframes; picture and font size.</p>
         </li>
 
         <li> 
             <h2>Changes to upcoming_event.html</h2>
-            <p>...</p>
+            <p>We made some small changes to the design because it was easier to see what was missing when we made the real prototype.</p>
+            <p>We added a border around each event to make sure it was easy to separate them. </p>
+            <p>We also scaled up the pictures.</p>
         </li>
 
         <li> 
             <h2>Changes to CSS styling</h2>
-            <p>...</p>
+            <p>The font sizes are changed, in order for the sites to look nice.</p>
+            <p>h1 is now 60px instead of 64px and h2 is 20px.</p>
+            <p>We also decided to not include the h3 font, since we didn’t feel we had the need for it. </p>
         </li>
 
         <li> 
             <h2>Changes to script.js</h2>
-            <p>...</p>
+            <p>404 this page does not exist anymore. Instead we moved the footer into one page called footer.js and header.js connected to each page.</p>
         </li>
 
         <li> 
             <h2>Changes to reqiered javaScript 1: photo carousel</h2>
-            <p>...</p>
+            <p>The photo carousel was almost made the way we planned. Instead of scrolling through pictures, you can click your way through them.</p>
         </li>
 
         <li> 
             <h2>Changes to reqiered javaScript 2: Loading icon</h2>
-            <p>...</p>
+            <p>Instead of making a loading-icon connected to the purchase page, we made a hover-animation connected to the drinks-page, to give the user some fun interaction and the page some more graphic elements. </p>
         </li>
 
         <li> 
             <h2>Changes to reqiered javaScript 3: "Time to next event"</h2>
-            <p>...</p>
+            <p>We changed the concept from having a box that would show the next event depending on what date it is, to having a countdown on each upcoming event on the “upcoming event”-side. We did not want to show this in separate boxes, but instead write “Days left:...” in the bottom of the boxes of each event. </p>
         </li>
 
         <li> 
             <h2>Changes to reqiered javaScript 4: Join us form</h2>
-            <p>...</p>
+            <p>Instead of the planned “Animation effect while on headings” we made a form on the join us page. We found that a form would be better for our webpage. </p>
+            <p>When the “Apply here” button is pressed, a form poppes up, where you can write your name and email. In reality this will be sent to a person in the Torsdagsbar team. </p>
         </li>
 
     </ul>
 
 
     <h2>Updated hierarchy</h2>
+
+    <ul>
+        <li>Index.html</li>
+        <li>About.html</li>
+        <li>Upcoming_event.html</li>
+        <li>Drinks.html</li>
+        <li>Digital_drinking_card.html</li>
+        <li>Join_us.html</li>
+        <li>P3_changes_22.html</li>
+        <li>Favicon/</li>
+        <dd>android-chrome-192x192.png</dd>
+        <dd>android-chrome-512x512.png</dd>
+        <dd>apple-touch-icon.png</dd>
+        <dd>favicon-16x16.png</dd>
+        <dd>favicon-32x32.png</dd>
+        <dd>favicon.ico</dd>
+        <li>Img/</li>
+        <dd>1.png</dd>
+        <dd>2.png</dd>
+        <dd>3.png</dd>
+        <dd>4.png</dd>
+        <dd>5.png</dd>
+        <dd>about_us.png</dd>
+        <dd>aperol.png</dd>
+        <dd>daiquiri.png</dd>
+        <dd>dj.png</dd>
+        <dd>event2.png</dd>
+        <dd>facebook.png</dd>
+        <dd>instagram.png</dd>
+        <dd>mojito.png</dd>
+        <dd>moscow.jpg</dd>
+        <dd>negroni.png</dd>
+        <dd>stemningsbilde.jpeg</dd>
+        <dd>tekstur.jpeg</dd>
+        <dd>upcomingevent.jpeg</dd>
+        <li>Styling.css</li>
+        <li>footer.js</li>
+        <li>navbar.js</li>
+
+    </ul>
+        
     
 
 
