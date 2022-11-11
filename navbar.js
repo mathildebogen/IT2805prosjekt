@@ -24,7 +24,8 @@ for (let i = 0; i<sites.length; i++) {
     link.href = sites[i];
     link.style.textDecoration = "none";
 
-    const names = document.createElement("h3");
+    const names = document.createElement("h2");
+    names.className = "hoverNames";
     names.innerHTML = siteNames[i];
 
     link.append(names);
