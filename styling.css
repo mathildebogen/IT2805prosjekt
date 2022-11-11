@@ -59,14 +59,7 @@ h2 {
     width: 50px;
 }
 
-h3 {
-    font-family: 'Inter';
-    font-weight: medium;
-    color: white;
-    font-size: 20px;
-}
-
-h3:hover, .logo:hover {
+.drinks:hover, .logo:hover, .hoverNames:hover{
     color: #FFB4CF;
 }
 
