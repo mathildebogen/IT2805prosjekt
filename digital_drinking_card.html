@@ -21,9 +21,7 @@
             border: 1px solid #FFDE77;
             border-radius: 10px;
         }
-        #prices{
-            text-align: center;
-        }
+
         td {
             position: relative;
             padding: 30px;
@@ -35,7 +33,7 @@
         }
 
         .animation {
-        margin-left: 10px;
+        margin-left: 5%;
         margin-top: 2px;
         width: 150px;
         transition-delay: 0.5s;
@@ -54,21 +52,30 @@
             width: 100%;
         }
 
+        #together {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin-bottom: 2%;
+        }
+
     </style>
 </head>
 <body>
     <!--Menubar-->
     <div id="navbar"></div>
 
-    <h1 id="prices">Prices</h1>
+    <div id="together">
+        <h1 id="prices">Prices</h1>
 
-    <div class="animation">
-        <img id="frameOne" src="img/1.png" alt="Animation of a drink loading, glass empty.">
-        <img id="frameTwo" src="img/2.png" alt="Animation of a drink loading, glass pouring.">
-        <img id="frameThree" src="img/3.png" alt="Animation of a drink loading, glass pouring.">
-        <img id="frameFour" src="img/4.png" alt="Animation of a drink loading, glass full.">
-        <img id="frameFive" src="img/5.png" alt="Animation of a drink loading, glass full with cherry on top.">
-
+        <div class="animation">
+            <img id="frameOne" src="img/1.png" alt="Animation of a drink loading, glass empty.">
+            <img id="frameTwo" src="img/2.png" alt="Animation of a drink loading, glass pouring.">
+            <img id="frameThree" src="img/3.png" alt="Animation of a drink loading, glass pouring.">
+            <img id="frameFour" src="img/4.png" alt="Animation of a drink loading, glass full.">
+            <img id="frameFive" src="img/5.png" alt="Animation of a drink loading, glass full with cherry on top.">
+    
+        </div>
     </div>
 
     <table>
