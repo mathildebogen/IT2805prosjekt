@@ -1,0 +1,23 @@
+body {
+    max-width: 800px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    text-align: justify;
+    font-size: 14pt;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fcf9f2;
+    line-height: 30px;
+
+}
+
+
+img {
+    width: 800px;
+    margin: auto;
+}
+
+h4 {
+    text-decoration: underline;
+}
